@@ -7,17 +7,17 @@
 }
 
 #title {
-  color: aquamarine;
+  color: rgb(135, 136, 136);
   font-family: Arial, sans-serif;
-  background-color: seagreen;
+  background-color: rgb(230, 230, 230);
 }
 
 #navmenu {
-  background-color: sienna;
+  background-color: rgb(245, 245, 245);
 }
 
 ul {
-  color: aquamarine;
+  color: rgb(179, 24, 24);
 
 }
 
@@ -29,16 +29,60 @@ li {
 }
 
 a {
-  color:gray;
+  color:rgb(138, 24, 24);
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #workspopup {
-  width:500px;
-  height: 300px;
-  background-color:salmon;
+  width:700px;
+  height: 400px;
+  background-color:rgb(148, 148, 148);
   border-radius: 20px;
+  position: absolute;
   visibility: hidden;
-  position: absolute
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+#reactplusjs {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+#wppluselem {
+  display: flex;
+  flex-direction: column;
+  align-items:center
+
+}
+
+#react-logo {
+  width: 100px
+}
+
+#plus {
+  width: 30px
+}
+
+#js-logo {
+  width: 100px
+}
+
+#wp {
+  width: 100px
+}
+
+#elementor {
+  width: 100px
+}
+
+#bio {
+  position:absolute;
+  visibility:hidden;
+  margin-top: 300px;
+  color: gray;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
