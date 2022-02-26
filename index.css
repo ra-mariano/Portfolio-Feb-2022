@@ -6,10 +6,19 @@
   min-height: 100vh
 }
 
+#bio-title {
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  position: absolute;
+  margin-right: 170px;
+  visibility: hidden
+}
+
 #title {
   color: rgb(110, 110, 110);
   font-family: Arial, sans-serif;
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(245, 245, 245);
 }
 
 #navmenu {
@@ -51,6 +60,9 @@ a {
   flex-direction: column;
   align-items: center;
   margin-right: 50px;
+  filter: saturate(0%);
+
+  
 }
 
 #wppluselem {
@@ -58,27 +70,35 @@ a {
   flex-direction: column;
   align-items:center;
   margin-left: 50px;
+  filter: saturate(0%);
 
 }
 
 #react-logo {
-  width: 100px
+  width: 100px;
+  margin-bottom: 10px;
 }
 
 #plus {
-  width: 30px
+  width: 30px;
+  background-color: aquamarine;
 }
 
 #js-logo {
-  width: 100px
+  width: 100px;
+  margin-bottom: 10px;
 }
 
 #wp {
-  width: 100px
+  width: 100px;
+  margin-bottom: 15px;
+  
 }
 
 #elementor {
-  width: 100px
+  width: 100px;
+  margin-top: 15px;
+
 }
 
 #bio {
@@ -89,8 +109,28 @@ a {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#formcontainer {
+  position:absolute;
+  width:700px;
+  height: 400px;
+  background-color:rgb(148, 148, 148);
+  padding: 10px;
+  border-radius: 10px;
+  visibility: hidden
+
+}
+
+.form-input {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-input input {
+  width: 100%
+}
+
 @media (max-width: 900px) {
   #workspopup {
     width: 400px
   }
+  
 }
