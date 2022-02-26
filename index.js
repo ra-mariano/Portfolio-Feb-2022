@@ -16,6 +16,7 @@ function worksOver() {
   
   document.getElementById("workspopup").style.visibility = "visible";
   document.getElementById("bio-title").style.visibility = "hidden";
+  document.getElementById("title").style.visibility = "hidden";
   document.getElementById("workspopup").animate([
     {opacity : 0},
   {opacity : 1}], {
