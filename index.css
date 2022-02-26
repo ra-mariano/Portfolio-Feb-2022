@@ -46,13 +46,22 @@ a {
 #workspopup {
   width:700px;
   height: 400px;
-  background-color:rgb(148, 148, 148);
+  background-color:rgb(158, 65, 65);
   border-radius: 20px;
   position: absolute;
   visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center; 
+}
+
+#workstitle {
+  position:absolute;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin-top: -300px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #reactplusjs {
@@ -120,12 +129,29 @@ a {
 
 }
 
+#message {
+  width: 100%
+}
+
 .form-input {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .form-input input {
   width: 100%
+}
+
+#submit {
+  display: block;
+  width: 80px;
+margin:auto
+
+}
+
+#closebutton {
+width: 100%;
+margin-top: 20px;
+text-align: center;
 }
 
 

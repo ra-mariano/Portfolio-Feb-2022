@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/70e04bd00e.js" crossorigin="anonymous"></script>
   
 </head>
 <body>
@@ -15,25 +16,28 @@
     <h1 id="title">ramariano - WEB DEVELOPER</h1>
     <nav id="navmenu">
       <ul>
-        <li><a id="aboutme" href="#aboutme">About Me</a></li>
-        <li><a id="works" href="#works">Works</a></li>
-        <li><a id="contact" href="#contact">Contact</a></li>
+        <li><a id="aboutme" href="#aboutme">ABOUT ME</a></li>
+        <li><a id="works" href="#works">WORKS</a></li>
+        <li><a id="contact" href="#contact">CONTACT</a></li>
       </ul>
       
     </nav>
  
     <div id="workspopup">
+      <h3 id="workstitle">CHOOSE THE TECH</h3>
       <a href="works1.html">
       <div id="reactplusjs">
  <img id="react-logo" src="favpng_react-javascript-responsive-web-design-github-angularjs.png">
  <img id="js-logo" src="favpng_javascript-responsive-web-design-programmer.png">    
 </div>
 </a>
+<a href="works2.html">
 <div id="wppluselem">
   <img id="wp" src="favpng_wordpress-logo-website-blog-icon.png">
 
   <img id="elementor" src="https://dailyblogtips.com/wp-content/uploads/Elementor-icon.png">
 </div>
+</a>
 </div>
 <h1 id="bio-title">ABOUT ME</h1>
 <h2 id="bio">Former professional musician looking to break into the web development industry.</h2>
@@ -42,21 +46,23 @@
 <form method="post" name="Form" action="https://formspree.io/f/moqrwadk">
   <div class="form-input">
     <label for="fname">First Name:</label><br>
-    <input type="text" id="fname" name="fname"><br><br>
+    <input type="text" id="fname" name="fname" required><br><br>
   </div>
   <div class="form-input">
     <label for="lname">Last Name:</label><br>
-    <input type="text" id="lname" name="lname"><br><br>
+    <input type="text" id="lname" name="lname" required><br><br>
   </div>
   <div class="form-input">  
     <label for="email">Email Address:</label><br>
-    <input type="email" id="email" name="email"><br><br>
+    <input type="email" id="email" name="email" required><br><br>
   </div>
   <div class="form-input">  
     <label for="message"></label>
-    <textarea id="message" name="message" cols="60" rows="10">Send a message!</textarea>
+    <textarea id="message" name="message" rows="10" required>Send a message!</textarea>
   </div>
-  <input type="submit" value="Submit">
+  <input id="submit" type="submit" value="Submit">
+  <i id="closebutton" class="fa-solid fa-circle-xmark fa-2xl"></i>
+  
 
 </form>
 </div>

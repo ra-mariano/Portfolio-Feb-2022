@@ -8,8 +8,7 @@ document.getElementById("reactplusjs").addEventListener("mouseout", reactjsOut);
 document.getElementById("wppluselem").addEventListener("mouseover", wpelemOver);
 document.getElementById("wppluselem").addEventListener("mouseout", wpelemOut);
 document.getElementById("contact").addEventListener("click", contactClick);
-
-document.getElementById("formcontainer").addEventListener("mouseout", contactOut);
+document.getElementById("closebutton").addEventListener("click", contactOut);
 
 
 function worksOver() {
@@ -56,6 +55,11 @@ document.getElementById("bio").animate([
   {opacity : 0},
 {opacity : 1}], {
 duration: 1600,
+})
+document.getElementById("bio-title").animate([
+  {opacity : 0},
+{opacity : 1}], {
+duration: 2500,
 })
 document.getElementById("title").animate([
   {opacity : 1},
