@@ -112,10 +112,13 @@ a:hover {
 
 #workstitle {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   color: rgb(255, 255, 255);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 5px;
 }
+
+
 
 #reactplusjs {
   display: flex;
@@ -127,6 +130,12 @@ a:hover {
   
 }
 
+#reactjslabel {
+  color: black;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
 #wppluselem {
   display: flex;
   flex-direction: column;
@@ -134,6 +143,11 @@ a:hover {
   margin-left: 50px;
   filter: saturate(0%);
 
+}
+#wpelemlabel {
+  color: black;
+  margin-left: 50px;
+  margin-top: 0px;
 }
 
 #react-logo {
@@ -213,6 +227,28 @@ text-align: center;
   #workspopup {
     width: 350px;
     height: 450px
+  }
+
+#workstitle {
+  margin-bottom: 5px;
+}
+
+#worksclose {
+  margin-top: 9px
+}
+
+#reactjslabel {
+  margin-left: 25px;
+}
+
+  #reactplusjs {
+    margin-left: 20px;
+    margin-right: 20px;  
+  }
+
+
+  #wppluselem {
+    margin-left: 50px;  
   }
 
   #aboutpopup {
