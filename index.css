@@ -3,14 +3,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh
+  min-height: 100vh;
+  position: relative
 }
 
 #bio-title {
   color: rgb(0, 0, 0);
   font-family: Arial, sans-serif;
   font-size: 40px;
-  position: fixed;
+  position: absolute;
   margin-right: 170px;
   visibility: hidden
 }
@@ -62,7 +63,7 @@ a {
   height: 450px;
   background-color:rgb(158, 65, 65);
   border-radius: 20px;
-  position: fixed;
+  position: absolute;
   visibility: hidden;
   display: flex;
   flex-direction: column;
@@ -135,7 +136,7 @@ a {
   }
 
 #bio {
-  position:fixed;
+  position:absolute;
   visibility:hidden;
   margin-top: 300px;
   color: gray;
@@ -145,7 +146,7 @@ a {
 }
 
 #formcontainer {
-  position:fixed;
+  position:absolute;
   width:600px;
   height: 400px;
   background-color:rgb(148, 148, 148);
@@ -197,6 +198,17 @@ text-align: center;
   }
   #bio {
     font-size: 15px
+  }
+  #aboutme {
+    font-size: 20px;
+  }
+  
+  #works {
+    font-size: 20px;
+  }
+  
+  #contact {
+    font-size: 20px;
   }
   #formcontainer {
      
