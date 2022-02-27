@@ -195,9 +195,13 @@ text-align: center;
   #bio-title {
     font-size: 30px;
     text-align: left;
+    display: flex;
+    justify-content:left
   }
   #bio {
-    font-size: 15px
+    font-size: 15px;
+    margin-top: 100px
+    
   }
   #aboutme {
     font-size: 20px;
