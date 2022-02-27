@@ -169,7 +169,6 @@ a:hover {
   margin-top: 30px;
   }
 
-  
 
 #formcontainer {
   position:absolute;
@@ -221,6 +220,14 @@ text-align: center;
     height: 450px
   }
 
+  #bio-title {
+    font-size: 30px;
+  }
+
+  #bio {
+    line-height: 2.2;
+  }
+
 
   #aboutme {
     font-size: 20px;
@@ -240,7 +247,7 @@ text-align: center;
     }
 
     #closebutton {
-      margin-top: 37px;
+      margin-top: 32px;
     }
 
   #headshot {
