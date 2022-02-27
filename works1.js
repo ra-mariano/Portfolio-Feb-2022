@@ -1,3 +1,5 @@
+/*
+
 document.getElementById("reactcalculatorimg").addEventListener("mouseover", calcOver);
 document.getElementById("reactcalculatorimg").addEventListener("mouseout", calcOut);
 document.getElementById("reactdrummachineimg").addEventListener("mouseover", drumOver);
@@ -5,6 +7,8 @@ document.getElementById("reactdrummachineimg").addEventListener("mouseout", drum
 document.getElementById("reactpomodoroclockimg").addEventListener("mouseover", clockOver);
 document.getElementById("reactpomodoroclockimg").addEventListener("mouseout", clockOut);
 
+if (window.innerWidth > 1000) {
+  
 function calcOver() {
   document.getElementById("reactcalculatorimg").animate([
   
@@ -13,6 +17,8 @@ function calcOver() {
     duration: 400,
   })
   document.getElementById("reactcalculatorimg").style.filter= "saturate(100%)"
+}
+
 }
 
 function calcOut() {
@@ -48,3 +54,9 @@ function clockOver() {
 function clockOut() {
   document.getElementById("reactpomodoroclockimg").style.filter= "saturate(0%)"
 }
+
+}
+
+*/
+
+  

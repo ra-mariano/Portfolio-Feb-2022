@@ -1,4 +1,4 @@
-document.getElementById("ronezoneimg").addEventListener("mouseover", roneOver);
+/*document.getElementById("ronezoneimg").addEventListener("mouseover", roneOver);
 document.getElementById("ronezoneimg").addEventListener("mouseout", roneOut);
 document.getElementById("playhouseimg").addEventListener("mouseover", playOver);
 document.getElementById("playhouseimg").addEventListener("mouseout", playOut);
@@ -30,6 +30,8 @@ function playOver() {
 function playOut() {
   document.getElementById("playhouseimg").style.filter= "saturate(0%)"
 }
+
+*/
 
 
 

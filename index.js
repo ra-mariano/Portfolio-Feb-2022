@@ -1,7 +1,8 @@
 document.getElementById("works").addEventListener("click", worksOver);
-document.getElementById("works").addEventListener("mouseout", worksOut);
+//document.getElementById("works").addEventListener("mouseout", worksOut);
 document.getElementById("workspopup").addEventListener("mouseover", worksPopUp);
-document.getElementById("workspopup").addEventListener("mouseout", worksPopOut);
+//document.getElementById("workspopup").addEventListener("mouseout", worksPopOut);
+document.getElementById("worksclose").addEventListener("click", worksPopOut);
 document.getElementById("aboutme").addEventListener("click", aboutMe);
 document.getElementById("reactplusjs").addEventListener("mouseover", reactjsOver);
 document.getElementById("reactplusjs").addEventListener("mouseout", reactjsOut);
@@ -16,6 +17,7 @@ function worksOver() {
   document.getElementById("workspopup").style.visibility = "visible";
   document.getElementById("bio-title").style.visibility = "hidden";
   document.getElementById("title").style.visibility = "hidden";
+  document.getElementById("navmenu").style.visibility = "hidden"
   document.getElementById("workspopup").animate([
     {opacity : 0},
   {opacity : 1}], {
@@ -24,14 +26,13 @@ function worksOver() {
 document.getElementById("bio").style.visibility = "hidden";
 }
 
-function worksOut() {
-  
+/*function worksOut() {
   document.getElementById("workspopup").style.visibility = "hidden"
- 
-}
+}*/
 
 function worksPopUp() {
   document.getElementById("workspopup").style.visibility = "visible"
+  document.getElementById("title").style.visibility = "hidden"
   
 }
 
@@ -39,7 +40,8 @@ function worksPopOut() {
   
 document.getElementById("workspopup").style.visibility = "hidden"
 document.getElementById("title").style.visibility = "visible"
-}
+document.getElementById("navmenu").style.visibility = "visible"
+} 
 
 function aboutMe() {
   document.getElementById("bio").style.visibility = "visible";
@@ -49,17 +51,17 @@ function aboutMe() {
 document.getElementById("bio").animate([
   { transform: 'translateY(100px)' },
   { transform: 'translateY(0px)' }], {
-duration: 1200,
+duration: 1100,
 })
 document.getElementById("bio").animate([
   {opacity : 0},
 {opacity : 1}], {
-duration: 1600,
+duration: 1400,
 })
 document.getElementById("bio-title").animate([
   {opacity : 0},
 {opacity : 1}], {
-duration: 2500,
+duration: 2000,
 })
 document.getElementById("title").animate([
   {opacity : 1},
@@ -107,6 +109,8 @@ function contactClick() {
   duration: 700,
 })
 document.getElementById("bio").style.visibility = "hidden";
+document.getElementById("title").style.visibility = "hidden";
+document.getElementById("navmenu").style.visibility = "hidden";
 }
 
 
@@ -115,6 +119,7 @@ function contactOut() {
  document.getElementById("formcontainer").style.visibility = "hidden";
  document.getElementById("bio-title").style.visibility = "hidden";
  document.getElementById("title").style.visibility = "visible";
+ document.getElementById("navmenu").style.visibility = "visible";
 }
 
 

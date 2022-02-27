@@ -44,7 +44,7 @@ a {
 }
 
 #workspopup {
-  width:700px;
+  width:600px;
   height: 400px;
   background-color:rgb(158, 65, 65);
   border-radius: 20px;
@@ -52,7 +52,7 @@ a {
   visibility: hidden;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center
 }
 
 #workstitle {
@@ -120,7 +120,7 @@ a {
 
 #formcontainer {
   position:absolute;
-  width:700px;
+  width:600px;
   height: 400px;
   background-color:rgb(148, 148, 148);
   padding: 10px;
@@ -154,16 +154,35 @@ margin-top: 20px;
 text-align: center;
 }
 
+#worksclose {
+  width: 100%;
+  margin-top: 340px;
+  text-align: center;
+  position: absolute
+  }
 
-@media (max-width: 600px) {
+
+@media (max-width: 700px) {
   #workspopup {
-    width: 350px;
+    width: 400px;
     height: 500px
   }
+
+  #worksclose {
+    margin-top: 400px;
+  }
+
   #bio-title {
     font-size: 70px;
+    text-align: left;
   }
   #bio {
     font-size: 15px
   }
-}
+  #formcontainer {
+     
+      width: 400px;
+      height: 400px
+    }
+  }
+ 
