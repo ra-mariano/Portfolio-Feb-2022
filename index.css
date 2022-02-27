@@ -7,13 +7,43 @@
   position: relative
 }
 
+#headshot {
+  width: 80px;
+ position: absolute;
+ top:5%;
+ left:3%
+
+}
+
+#aboutpopup {
+  width:600px;
+  height: 450px;
+  background-color:rgb(158, 65, 65);
+  border-radius: 20px;
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#aboutclose {
+  margin-top: 30px;
+}
+
 #bio-title {
   color: rgb(0, 0, 0);
   font-family: Arial, sans-serif;
   font-size: 40px;
-  position: absolute;
-  margin-right: 170px;
-  visibility: hidden
+  visibility: hidden;
+}
+
+#bio {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  padding: 5px 20px 5px 20px;
+  line-height: 2.5
+
 }
 
 #title {
@@ -44,6 +74,10 @@ a {
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+}
+
+a:hover {
+  cursor:pointer
 }
 
 #aboutme {
@@ -135,21 +169,13 @@ a {
   margin-top: 30px;
   }
 
-#bio {
-  position:absolute;
-  visibility:hidden;
-  margin-top: 300px;
-  color: gray;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+  
 
 #formcontainer {
   position:absolute;
   width:600px;
   height: 400px;
-  background-color:rgb(148, 148, 148);
+  background-color:rgb(158, 65, 65);
   padding: 10px 15px 10px 10px;
   border-radius: 10px;
   visibility: hidden
@@ -222,6 +248,12 @@ text-align: center;
     #closebutton {
       margin-top: 40px;
     }
+
+  #headshot {
+    width: 100px;
+    top:20%;
+ left:40%
+  }
 
   }
  

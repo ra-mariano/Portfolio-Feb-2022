@@ -1,3 +1,5 @@
+document.getElementById("aboutme").addEventListener("click", aboutClick);
+document.getElementById("aboutclose").addEventListener("click", aboutClose);
 document.getElementById("works").addEventListener("click", worksOver);
 //document.getElementById("works").addEventListener("mouseout", worksOut);
 document.getElementById("workspopup").addEventListener("mouseover", worksPopUp);
@@ -10,6 +12,29 @@ document.getElementById("wppluselem").addEventListener("mouseover", wpelemOver);
 document.getElementById("wppluselem").addEventListener("mouseout", wpelemOut);
 document.getElementById("contact").addEventListener("click", contactClick);
 document.getElementById("closebutton").addEventListener("click", contactOut);
+
+
+function aboutClick() {
+  document.getElementById("aboutpopup").style.visibility = "visible";
+  document.getElementById("title").style.visibility = "hidden";
+  document.getElementById("navmenu").style.visibility = "hidden"
+  document.getElementById("aboutpopup").animate([
+    {opacity : 0},
+  {opacity : 1}], {
+  duration: 700,
+})
+
+} 
+
+function aboutClose() {
+ 
+  
+    document.getElementById("aboutpopup").style.visibility = "hidden"
+    document.getElementById("bio-title").style.visibility = "hidden"
+    document.getElementById("bio").style.visibility = "hidden"
+    document.getElementById("title").style.visibility = "visible"
+    document.getElementById("navmenu").style.visibility = "visible"
+    } 
 
 
 function worksOver() {
