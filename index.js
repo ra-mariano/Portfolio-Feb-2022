@@ -63,12 +63,6 @@ document.getElementById("bio-title").animate([
 {opacity : 1}], {
 duration: 2000,
 })
-document.getElementById("title").animate([
-  {opacity : 1},
-{opacity : 0}], {
-duration: 1600,
-})
-
 
 }
 
