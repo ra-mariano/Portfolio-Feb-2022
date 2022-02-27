@@ -51,16 +51,20 @@ a {
   position: absolute;
   visibility: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center
 }
 
+#workslinks {
+  display:flex;
+  justify-content: center ;
+}
+
 #workstitle {
-  position:absolute;
   text-align: center;
   font-size: 30px;
   color: white;
-  margin-top: -300px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -110,6 +114,11 @@ a {
 
 }
 
+#worksclose {
+  width: 100%;
+  text-align: center;
+  }
+
 #bio {
   position:absolute;
   visibility:hidden;
@@ -154,12 +163,7 @@ margin-top: 20px;
 text-align: center;
 }
 
-#worksclose {
-  width: 100%;
-  margin-top: 340px;
-  text-align: center;
-  position: absolute
-  }
+
 
 
 @media (max-width: 1000px) {
@@ -169,7 +173,7 @@ text-align: center;
   }
 
   #worksclose {
-    margin-top: 400px;
+    margin-top: 0px
   }
 
   #bio-title {
