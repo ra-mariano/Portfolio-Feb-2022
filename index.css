@@ -10,7 +10,7 @@
   color: rgb(0, 0, 0);
   font-family: Arial, sans-serif;
   font-size: 40px;
-  position: absolute;
+  position: fixed;
   margin-right: 170px;
   visibility: hidden
 }
@@ -19,6 +19,7 @@
   color: rgb(110, 110, 110);
   font-family: Arial, sans-serif;
   background-color: rgb(245, 245, 245);
+  font-size: 35px;
 }
 
 #navmenu {
@@ -41,14 +42,27 @@ a {
   color:rgb(138, 24, 24);
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#aboutme {
+  font-size: 25px;
+}
+
+#works {
+  font-size: 25px;
+}
+
+#contact {
+  font-size: 25px;
 }
 
 #workspopup {
   width:600px;
-  height: 400px;
+  height: 450px;
   background-color:rgb(158, 65, 65);
   border-radius: 20px;
-  position: absolute;
+  position: fixed;
   visibility: hidden;
   display: flex;
   flex-direction: column;
@@ -64,7 +78,7 @@ a {
 #workstitle {
   text-align: center;
   font-size: 30px;
-  color: rgb(59, 91, 233);
+  color: rgb(255, 255, 255);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -117,22 +131,25 @@ a {
 #worksclose {
   width: 100%;
   text-align: center;
+  margin-top: 30px;
   }
 
 #bio {
-  position:absolute;
+  position:fixed;
   visibility:hidden;
   margin-top: 300px;
   color: gray;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #formcontainer {
-  position:absolute;
+  position:fixed;
   width:600px;
   height: 400px;
   background-color:rgb(148, 148, 148);
-  padding: 10px;
+  padding: 10px 15px 10px 10px;
   border-radius: 10px;
   visibility: hidden
 
@@ -172,22 +189,24 @@ text-align: center;
     height: 500px
   }
 
-  #worksclose {
-    margin-top: 0px
-  }
+  
 
   #bio-title {
     font-size: 30px;
     text-align: left;
-  position: absolute;
   }
   #bio {
     font-size: 15px
   }
   #formcontainer {
      
-      width: 330px;
+      width: 320px;
       height: 420px
     }
+
+    #closebutton {
+      margin-top: 40px;
+    }
+
   }
  
