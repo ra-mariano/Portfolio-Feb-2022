@@ -34,6 +34,27 @@ h1 {
   
 }
 
+#homewpelem {
+  text-align: center;
+  color:rgb(138, 24, 24);
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+  
+}
+
+#toreactjs {
+  text-align: center;
+  color:rgb(138, 24, 24);
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
 .images:hover {
 
 }
