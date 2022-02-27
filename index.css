@@ -178,7 +178,7 @@ a:hover {
   background-color:rgb(158, 65, 65);
   padding: 10px 15px 10px 10px;
   border-radius: 10px;
-  visibility: hidden
+  visibility: hidden;
 
 }
 
@@ -213,7 +213,12 @@ text-align: center;
 @media (max-width: 1000px) {
   #workspopup {
     width: 350px;
-    height: 500px
+    height: 450px
+  }
+
+  #aboutpopup {
+    width: 350px;
+    height: 450px
   }
 
   
@@ -246,7 +251,7 @@ text-align: center;
     }
 
     #closebutton {
-      margin-top: 40px;
+      margin-top: 37px;
     }
 
   #headshot {
