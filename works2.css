@@ -15,14 +15,14 @@ h1 {
 }
 
 #ronezoneimg {
-  width: 600px;
+  width: 550px;
   
 }
 
 
 
 #playhouseimg {
-  width: 600px;
+  width: 550px;
   
 }
 
@@ -53,6 +53,7 @@ h1 {
   font-size: 20px;
   font-weight: 600;
   margin-top: 10px;
+  margin-bottom: 100px
 }
 
 @media (max-width: 1000px) {
