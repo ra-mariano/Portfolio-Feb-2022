@@ -1,3 +1,98 @@
+let projects = document.getElementById("imagelinks")
+document.getElementById("rightarrow").addEventListener("click", toTheRight);
+document.getElementById("leftarrow").addEventListener("click", toTheLeft);
+//document.getElementById("secondrightarrow").addEventListener("click", toTheRight2);
+
+
+
+
+
+function toTheRight() {
+
+if (projects.dataset.carouselstate==="centered") {  
+console.log("working")
+  document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(0px)' },
+    { transform: 'translateX(-350px)' }
+  ],
+  {
+  
+    duration: 300,
+    
+  });
+
+  document.getElementById("imagelinks").style.transform = 'translateX(-350px)';
+  projects.dataset.carouselstate="right1"
+}
+
+else if (projects.dataset.carouselstate==="left1") {
+
+  document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(350px)' },
+    { transform: 'translateX(0px)' }
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+
+  document.getElementById("imagelinks").style.transform = 'translateX(0px)';
+  projects.dataset.carouselstate="centered"
+}
+
+}
+
+
+
+  
+
+
+function toTheLeft() {
+
+  if(projects.dataset.carouselstate==="centered") {
+    document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(0px)' },
+    { transform: 'translateX(350px)' }
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+  document.getElementById("imagelinks").style.transform = 'translateX(350px)';
+  projects.dataset.carouselstate="left1"
+}
+
+else if (projects.dataset.carouselstate==="right1") {
+  
+    document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(-350px)' },
+    { transform: 'translateX(0px)' }
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+  document.getElementById("imagelinks").style.transform = 'translateX(0px)';
+  projects.dataset.carouselstate="centered"
+}
+}
+
+
+  
+
+
+
+
+
+
+
 /*
 
 document.getElementById("reactcalculatorimg").addEventListener("mouseover", calcOver);
