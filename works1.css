@@ -7,6 +7,7 @@
   position: relative;
   overflow: hidden;
   
+  
 }
 
 h1 {
@@ -20,7 +21,9 @@ h1 {
 #reactcalculatorimg {
   width: 350px;
   height: 370px;
-  filter: saturate(70%)
+  filter: saturate(70%);
+  margin-left: 40px;
+  margin-right: 40px
  
 }
 
@@ -29,28 +32,34 @@ h1 {
 #reactdrummachineimg {
   width: 350px;
   height: 310px;
-  filter: saturate(70%)
+  filter: saturate(70%);
+  margin-left: 40px;
+  margin-right: 40px
   
 }
 
 #reactpomodoroclockimg {
   width: 350px;
   height: 310px;
-  filter: saturate(70%)
+  filter: saturate(70%);
+  margin-left: 40px;
+  margin-right: 40px
   
 }
 
 #barchartimg {
   width: 350px;
   height: 310px;
-  filter: saturate(70%)
+  filter: saturate(70%);
+  margin-left: 40px;
+  margin-right: 40px
 }
 
 #imagelinks {
-  display: flex;
-  justify-content: space-evenly;
+  display:flex;
   align-items: center;
-  
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 #homereactjs {
