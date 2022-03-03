@@ -14,7 +14,7 @@ console.log("working")
   document.getElementById("imagelinks").animate([
     // keyframes
     { transform: 'translateX(0px)' },
-    { transform: 'translateX(-350px)' }
+    { transform: 'translateX(-390px)' }
   ],
   {
   
@@ -22,7 +22,7 @@ console.log("working")
     
   });
 
-  document.getElementById("imagelinks").style.transform = 'translateX(-350px)';
+  document.getElementById("imagelinks").style.transform = 'translateX(-390px)';
   projects.dataset.carouselstate="right1"
 }
 
@@ -30,7 +30,7 @@ else if (projects.dataset.carouselstate==="left1") {
 
   document.getElementById("imagelinks").animate([
     // keyframes
-    { transform: 'translateX(350px)' },
+    { transform: 'translateX(390px)' },
     { transform: 'translateX(0px)' }
   ],
   {
@@ -56,14 +56,14 @@ function toTheLeft() {
     document.getElementById("imagelinks").animate([
     // keyframes
     { transform: 'translateX(0px)' },
-    { transform: 'translateX(350px)' }
+    { transform: 'translateX(390px)' }
   ],
   {
   
     duration: 200,
     
   });
-  document.getElementById("imagelinks").style.transform = 'translateX(350px)';
+  document.getElementById("imagelinks").style.transform = 'translateX(390px)';
   projects.dataset.carouselstate="left1"
 }
 
@@ -71,7 +71,7 @@ else if (projects.dataset.carouselstate==="right1") {
   
     document.getElementById("imagelinks").animate([
     // keyframes
-    { transform: 'translateX(-350px)' },
+    { transform: 'translateX(-390px)' },
     { transform: 'translateX(0px)' }
   ],
   {

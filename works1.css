@@ -96,23 +96,24 @@ h1 {
 @media (max-width: 1000px) {
   #imagelinks {
    
-  }
+      padding-left: 20px;
+
+    }
+  
   #reactcalculatorimg {
     width: 300px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    
+    
   }
   
   #reactdrummachineimg {
     width: 350px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    
   }
   
   #reactpomodoroclockimg {
     width: 350px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    
   }
 
   h1{
