@@ -1,5 +1,5 @@
 #container {
-  background-color: rgb(245, 245, 245);
+  background: linear-gradient(160deg, rgb(161, 162, 185) 0% 5%, rgb(233, 233, 233) 20% 50%, rgb(186, 188, 204) 50% 65%, rgb(238, 238, 238) 95% 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@
 #aboutpopup {
   width:600px;
   height: 450px;
-  background-color:rgb(158, 65, 65);
+  background-color:rgba(74, 102, 231, 0.8);
   border-radius: 20px;
   position: absolute;
   visibility: hidden;
@@ -42,6 +42,7 @@
 
 #bio {
   font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(0, 0, 0);
   padding: 5px 20px 5px 20px;
   line-height: 2.5
@@ -49,18 +50,17 @@
 }
 
 #title {
-  color: rgb(110, 110, 110);
+  color: rgb(78, 80, 94);
   font-family: Arial, sans-serif;
-  background-color: rgb(245, 245, 245);
   font-size: 35px;
 }
 
 #navmenu {
-  background-color: rgb(245, 245, 245);
+
 }
 
 ul {
-  color: rgb(179, 24, 24);
+  color: rgb(31, 44, 160);
 
 }
 
@@ -72,7 +72,7 @@ li {
 }
 
 a {
-  color:rgb(138, 24, 24);
+  color:rgb(24, 45, 138);
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -97,7 +97,7 @@ a:hover {
 #workspopup {
   width:600px;
   height: 450px;
-  background-color:rgb(158, 65, 65);
+  background-color:rgba(74, 102, 231, 0.8);
   border-radius: 20px;
   position: absolute;
   visibility: hidden;
@@ -190,7 +190,7 @@ a:hover {
   position:absolute;
   width:600px;
   height: 400px;
-  background-color:rgb(158, 65, 65);
+  background-color:rgba(74, 102, 231, 0.8);
   padding: 10px 15px 10px 10px;
   border-radius: 10px;
   visibility: hidden;
