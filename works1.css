@@ -1,5 +1,5 @@
 #container {
-  background-color: rgb(245, 245, 245);
+  background: linear-gradient(160deg, rgb(161, 162, 185) 0% 10%, rgb(233, 233, 233) 15% 50%, rgb(186, 188, 204) 60% 65%, rgb(238, 238, 238) 95% 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,6 +7,13 @@
   position: relative;
   overflow: hidden;
   
+  
+}
+
+#works1footer {
+  background-color: rgb(47, 47, 131, .8);
+  display:flex;
+  flex-direction: column;
   
 }
 
@@ -24,58 +31,74 @@ h1 {
   width: 350px;
   height: 370px;
   filter: saturate(70%);
-  margin-left: 40px;
-  margin-right: 40px
- 
+  margin-left: 4vw;
+  margin-right: 4vw;
+  border-radius: 7px;
+  opacity: .9;
 }
 
 #reactdrummachineimg {
   width: 350px;
   height: 310px;
   filter: saturate(70%);
-  margin-left: 40px;
-  margin-right: 40px
-  
+  margin-left: 4vw;
+  margin-right: 4vw;
+  border-radius: 7px;
+  opacity: .9;
 }
 
 #reactpomodoroclockimg {
   width: 350px;
   height: 310px;
   filter: saturate(70%);
-  margin-left: 40px;
-  margin-right: 40px
-  
+  margin-left: 4vw;
+  margin-right: 4vw;
+  border-radius: 7px;
+  opacity: .9;
 }
 
 #barchartimg {
   width: 350px;
   height: 310px;
   filter: saturate(70%);
-  margin-left: 40px;
-  margin-right: 40px
+  margin-left: 4vw;
+  margin-right: 4vw;
+  border-radius: 7px;
+  opacity: .9;
+}
+
+#scatterplotimg {
+  width: 350px;
+  height: 310px;
+  filter: saturate(70%);
+  margin-left: 4vw;
+  margin-right: 4vw;
+  border-radius: 7px;
+  opacity: .9;
 }
 
 #imagelinks {
   display:flex;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin-bottom: 20px;
+  margin-left: 4vw;
+  
 }
 
 #homereactjs {
   text-align: center;
-  color:rgb(138, 24, 24);
+  color:rgb(255, 255, 255);
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
   font-weight: 600;
-  margin-top: 30px
+  margin-top: 50px
   
 }
 
 #towpelem {
   text-align: center;
-  color:rgb(138, 24, 24);
+  color:rgb(255, 255, 255);
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
@@ -93,15 +116,11 @@ h1 {
   right: 0
 }
 
-@media (max-width: 1000px) {
-  #imagelinks {
-   
-      padding-left: 0px;
-
-    }
+@media (max-width: 450px) {
+  
   
   #reactcalculatorimg {
-    width: 300px;
+    width: 350px;
     
     
   }

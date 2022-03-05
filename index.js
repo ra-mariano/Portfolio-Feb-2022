@@ -13,6 +13,13 @@ document.getElementById("wppluselem").addEventListener("mouseout", wpelemOut);
 document.getElementById("contact").addEventListener("click", contactClick);
 document.getElementById("closebutton").addEventListener("click", contactOut);
 
+document.getElementById("aboutme").addEventListener("mouseover", aboutLine);
+document.getElementById("aboutme").addEventListener("mouseout", aboutLineOut);
+document.getElementById("works").addEventListener("mouseover", worksLine);
+document.getElementById("works").addEventListener("mouseout", worksLineOut);
+document.getElementById("contact").addEventListener("mouseover", contactLine);
+document.getElementById("contact").addEventListener("mouseout", contactLineOut);
+
 
 function aboutClick() {
   document.getElementById("aboutpopup").style.visibility = "visible";
@@ -141,6 +148,44 @@ function contactOut() {
  document.getElementById("navmenu").style.visibility = "visible";
 }
 
+function aboutLine() {
+  document.getElementById("aboutline").style.visibility = "visible";
+  document.getElementById("aboutline").animate([
+    {opacity : 0},
+  {opacity : 1}], {
+  duration: 400,
+})
+}
+
+function aboutLineOut() {
+  document.getElementById("aboutline").style.visibility = "hidden";
+}
+
+function worksLine() {
+  document.getElementById("worksline").style.visibility = "visible";
+  document.getElementById("worksline").animate([
+    {opacity : 0},
+  {opacity : 1}], {
+  duration: 400,
+})
+}
+
+function worksLineOut() {
+  document.getElementById("worksline").style.visibility = "hidden";
+}
+
+function contactLine() {
+  document.getElementById("contactline").style.visibility = "visible";
+  document.getElementById("contactline").animate([
+    {opacity : 0},
+  {opacity : 1}], {
+  duration: 400,
+})
+}
+
+function contactLineOut() {
+  document.getElementById("contactline").style.visibility = "hidden";
+}
 
 
 

@@ -8,10 +8,11 @@
 }
 
 #headshot {
-  width: 80px;
+  width: 100px;
  position: absolute;
  top:5%;
- left:3%
+ left:3%;
+ opacity: .9
 
 }
 
@@ -55,6 +56,41 @@
   font-size: 35px;
 }
 
+#divider {
+  width: 4px;
+  height: 200px;
+  background-color: rgb(67, 43, 87, .6);
+  margin-left: 30px;
+  border-radius: 2px;
+}
+
+#aboutline {
+  width: 4px;
+  height: 33px;
+  background-color: rgb(67, 43, 87);
+  margin-right: 5px;
+  visibility: hidden;
+  border-radius: 2px;
+}
+
+#worksline {
+  width: 4px;
+  height: 33px;
+  background-color: rgb(67, 43, 87);
+  margin-right: 5px;
+  visibility: hidden;
+  border-radius: 2px;
+}
+
+#contactline {
+  width: 4px;
+  height: 33px;
+  background-color: rgb(67, 43, 87);
+  margin-right: 5px;
+  visibility: hidden;
+  border-radius: 2px;
+}
+
 #navmenu {
 
 }
@@ -69,6 +105,7 @@ li {
   list-style: none;
   font-size: 20px;
   font-weight: 550;
+  display: flex;
 }
 
 a {

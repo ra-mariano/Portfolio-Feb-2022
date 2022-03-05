@@ -4,17 +4,18 @@ document.getElementById("leftarrow").addEventListener("click", toTheLeft);
 //document.getElementById("secondrightarrow").addEventListener("click", toTheRight2);
 
 
-
+console.log(screen.width)
+console.log(screen.availWidth)
 
 
 function toTheRight() {
 
-if (projects.dataset.carouselstate==="centered") {  
+if (projects.dataset.carouselstate==="centered" && screen.width>1400) {  
 console.log("working")
   document.getElementById("imagelinks").animate([
     // keyframes
     { transform: 'translateX(0px)' },
-    { transform: 'translateX(-390px)' }
+    { transform: 'translateX(calc(-33vw))' }
   ],
   {
   
@@ -22,16 +23,17 @@ console.log("working")
     
   });
 
-  document.getElementById("imagelinks").style.transform = 'translateX(-390px)';
-  projects.dataset.carouselstate="right1"
+  document.getElementById("imagelinks").style.transform = 'translateX(-33vw)';
+  projects.dataset.carouselstate="scroll1"
 }
 
-else if (projects.dataset.carouselstate==="left1") {
+
+else if (projects.dataset.carouselstate==="scroll1" && screen.width>1400) {
 
   document.getElementById("imagelinks").animate([
     // keyframes
-    { transform: 'translateX(390px)' },
-    { transform: 'translateX(0px)' }
+    { transform: 'translateX(-33vw)' },
+    { transform: 'translateX(-66vw)' }
   ],
   {
   
@@ -39,9 +41,82 @@ else if (projects.dataset.carouselstate==="left1") {
     
   });
 
-  document.getElementById("imagelinks").style.transform = 'translateX(0px)';
-  projects.dataset.carouselstate="centered"
+  document.getElementById("imagelinks").style.transform = 'translateX(-66vw)';
+  projects.dataset.carouselstate="scroll2"
+  console.log("scroll2")
 }
+
+if (projects.dataset.carouselstate==="centered" && screen.width<450) {  
+  console.log("working")
+    document.getElementById("imagelinks").animate([
+      // keyframes
+      { transform: 'translateX(0px)' },
+      { transform: 'translateX(calc(-350px - 8vw))' }
+    ],
+    {
+    
+      duration: 300,
+      
+    });
+  
+    document.getElementById("imagelinks").style.transform = 'translateX(calc(-350px - 8vw))';
+    projects.dataset.carouselstate="scroll1"
+  }
+  
+  
+  else if (projects.dataset.carouselstate==="scroll1" && screen.width<450) {
+  
+    document.getElementById("imagelinks").animate([
+      // keyframes
+      { transform: 'translateX(calc(-350px - 8vw))' },
+      { transform: 'translateX(calc(-700px - 16vw))' }
+    ],
+    {
+    
+      duration: 200,
+      
+    });
+  
+    document.getElementById("imagelinks").style.transform = 'translateX(calc(-700px - 16vw))';
+    projects.dataset.carouselstate="scroll2"
+    
+  }
+
+  else if (projects.dataset.carouselstate==="scroll2" && screen.width<450) {
+  
+    document.getElementById("imagelinks").animate([
+      // keyframes
+      { transform: 'translateX(calc(-700px - 16vw))' },
+      { transform: 'translateX(calc(-1050px - 24vw))' }
+    ],
+    {
+    
+      duration: 200,
+      
+    });
+  
+    document.getElementById("imagelinks").style.transform = 'translateX(calc(-1050px - 24vw))';
+    projects.dataset.carouselstate="scroll3"
+    
+  }
+
+  else if (projects.dataset.carouselstate==="scroll3" && screen.width<450) {
+  
+    document.getElementById("imagelinks").animate([
+      // keyframes
+      { transform: 'translateX(calc(-1050px - 24vw))' },
+      { transform: 'translateX(calc(-1400px - 32vw))' }
+    ],
+    {
+    
+      duration: 200,
+      
+    });
+  
+    document.getElementById("imagelinks").style.transform = 'translateX(calc(-1400px - 32vw))';
+    projects.dataset.carouselstate="scroll4"
+    
+  }
 
 }
 
@@ -52,26 +127,13 @@ else if (projects.dataset.carouselstate==="left1") {
 
 function toTheLeft() {
 
-  if(projects.dataset.carouselstate==="centered") {
-    document.getElementById("imagelinks").animate([
-    // keyframes
-    { transform: 'translateX(0px)' },
-    { transform: 'translateX(390px)' }
-  ],
-  {
   
-    duration: 200,
-    
-  });
-  document.getElementById("imagelinks").style.transform = 'translateX(390px)';
-  projects.dataset.carouselstate="left1"
-}
 
-else if (projects.dataset.carouselstate==="right1") {
-  
-    document.getElementById("imagelinks").animate([
+if (projects.dataset.carouselstate==="scroll1" && screen.width>1400) {
+
+  document.getElementById("imagelinks").animate([
     // keyframes
-    { transform: 'translateX(-390px)' },
+    { transform: 'translateX(-33vw)' },
     { transform: 'translateX(0px)' }
   ],
   {
@@ -79,9 +141,28 @@ else if (projects.dataset.carouselstate==="right1") {
     duration: 200,
     
   });
+
   document.getElementById("imagelinks").style.transform = 'translateX(0px)';
   projects.dataset.carouselstate="centered"
 }
+
+else if (projects.dataset.carouselstate==="scroll2" && screen.width>1400) {
+  
+    document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(-66vw)' },
+    { transform: 'translateX(-33vw)' }
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+  document.getElementById("imagelinks").style.transform = 'translateX(-33vw)';
+  projects.dataset.carouselstate="scroll1"
+}
+
+
 }
 
 
