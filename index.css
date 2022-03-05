@@ -265,6 +265,23 @@ text-align: center;
 
 
 @media (max-width: 1000px) {
+
+#navmenu {
+  
+}
+
+ul {
+  padding-left: 0px;
+  padding-right: 3px
+}
+
+#title {
+  padding-left: 5px;
+  font-size: 30px;
+  width: 220px
+  
+}
+
   #workspopup {
     width: 350px;
     height: 450px
@@ -331,6 +348,11 @@ text-align: center;
     width: 100px;
     top:20%;
  left:40%
+  }
+
+  #divider {
+    margin-left: 0px;
+    margin-right: 0px
   }
 
   }
