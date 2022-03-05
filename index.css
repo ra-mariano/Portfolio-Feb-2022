@@ -1,5 +1,5 @@
 #container {
-  background: linear-gradient(160deg, rgb(161, 162, 185) 0% 5%, rgb(233, 233, 233) 20% 50%, rgb(186, 188, 204) 50% 65%, rgb(238, 238, 238) 95% 100%);
+  background: linear-gradient(160deg, rgb(161, 162, 185) 0% 5%, rgb(233, 233, 233) 20% 50%, rgb(164, 168, 199) 50% 65%, rgb(238, 238, 238) 95% 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@
 #aboutpopup {
   width:600px;
   height: 450px;
-  background-color:rgba(74, 102, 231, 0.8);
+  background-color:rgba(81, 108, 228, 0.8);
   border-radius: 20px;
   position: absolute;
   visibility: hidden;
@@ -72,6 +72,8 @@
   visibility: hidden;
   border-radius: 2px;
 }
+
+
 
 #worksline {
   width: 4px;
@@ -134,7 +136,7 @@ a:hover {
 #workspopup {
   width:600px;
   height: 450px;
-  background-color:rgba(74, 102, 231, 0.8);
+  background-color:rgba(81, 108, 228, 0.8);
   border-radius: 20px;
   position: absolute;
   visibility: hidden;
@@ -227,7 +229,7 @@ a:hover {
   position:absolute;
   width:600px;
   height: 400px;
-  background-color:rgba(74, 102, 231, 0.8);
+  background-color:rgba(81, 108, 228, 0.8);
   padding: 10px 15px 10px 10px;
   border-radius: 10px;
   visibility: hidden;
