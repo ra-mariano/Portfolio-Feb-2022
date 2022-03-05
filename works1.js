@@ -10,30 +10,30 @@ console.log(screen.availWidth)
 
 function toTheRight() {
 
-if (projects.dataset.carouselstate==="centered" && screen.width>1400) {  
+if (projects.dataset.carouselstate==="centered" && screen.width>=1350) {  
 console.log("working")
   document.getElementById("imagelinks").animate([
     // keyframes
     { transform: 'translateX(0px)' },
-    { transform: 'translateX(calc(-33vw))' }
-  ],
-  {
-  
-    duration: 300,
+      { transform: 'translateX(calc(-350px - 8vw))' }
+    ],
+    {
     
-  });
-
-  document.getElementById("imagelinks").style.transform = 'translateX(-33vw)';
-  projects.dataset.carouselstate="scroll1"
+      duration: 200,
+      
+    });
+  
+    document.getElementById("imagelinks").style.transform = 'translateX(calc(-350px - 8vw))';
+    projects.dataset.carouselstate="scroll1"
 }
 
 
-else if (projects.dataset.carouselstate==="scroll1" && screen.width>1400) {
+else if (projects.dataset.carouselstate==="scroll1" && screen.width>=1350) {
 
   document.getElementById("imagelinks").animate([
     // keyframes
-    { transform: 'translateX(-33vw)' },
-    { transform: 'translateX(-66vw)' }
+    { transform: 'translateX(calc(-350px - 8vw))' },
+    { transform: 'translateX(calc(-700px - 16vw))' }
   ],
   {
   
@@ -41,12 +41,87 @@ else if (projects.dataset.carouselstate==="scroll1" && screen.width>1400) {
     
   });
 
-  document.getElementById("imagelinks").style.transform = 'translateX(-66vw)';
+  document.getElementById("imagelinks").style.transform = 'translateX(calc(-700px - 16vw))';
   projects.dataset.carouselstate="scroll2"
-  console.log("scroll2")
+ 
 }
 
-if (projects.dataset.carouselstate==="centered" && screen.width<450) {  
+else if (projects.dataset.carouselstate==="centered" && screen.width>=450  && screen.width<1350) {
+
+  document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(calc(0px)' },
+    { transform: 'translateX(calc(-350px - 8vw))' }
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+
+  document.getElementById("imagelinks").style.transform = 'translateX(calc(-350px - 8vw))';
+  projects.dataset.carouselstate="scroll1"
+  console.log("scroll1 medium")
+ 
+}
+
+else if (projects.dataset.carouselstate==="scroll1" && screen.width>=450  && screen.width<1350) {
+
+  document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(calc(-350px - 8vw))' },
+    { transform: 'translateX(calc(-700px - 16vw))' }
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+
+  document.getElementById("imagelinks").style.transform = 'translateX(calc(-700px - 16vw))';
+  projects.dataset.carouselstate="scroll2"
+  console.log("scroll2 medium")
+ 
+}
+
+else if (projects.dataset.carouselstate==="scroll2" && screen.width>=450  && screen.width<1350) {
+
+  document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(calc(-700px - 16vw))' },
+    { transform: 'translateX(calc(-1050px - 24vw))' }
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+
+  document.getElementById("imagelinks").style.transform = 'translateX(calc(-1050px - 24vw))';
+  projects.dataset.carouselstate="scroll3"
+  console.log("scroll3 medium")
+ 
+}
+
+else if (projects.dataset.carouselstate==="scroll3" && screen.width>=450  && screen.width<1350) {
+
+  document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(calc(-1050px - 24vw))' },
+    { transform: 'translateX(calc(-1400px - 32vw))' }
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+
+  document.getElementById("imagelinks").style.transform = 'translateX(calc(-1400px - 32vw))';
+  projects.dataset.carouselstate="scroll4"
+ 
+}
+
+else if (projects.dataset.carouselstate==="centered" && screen.width<450) {  
   console.log("working")
     document.getElementById("imagelinks").animate([
       // keyframes
@@ -55,7 +130,7 @@ if (projects.dataset.carouselstate==="centered" && screen.width<450) {
     ],
     {
     
-      duration: 300,
+      duration: 200,
       
     });
   
@@ -129,11 +204,44 @@ function toTheLeft() {
 
   
 
-if (projects.dataset.carouselstate==="scroll1" && screen.width>1400) {
+if (projects.dataset.carouselstate==="scroll1" && screen.width>=1350) {
 
   document.getElementById("imagelinks").animate([
     // keyframes
-    { transform: 'translateX(-33vw)' },
+    { transform: 'translateX(calc(-350px - 8vw))' },
+    { transform: 'translateX(0px)' }
+    ],
+    {
+    
+      duration: 300,
+      
+    });
+  
+    document.getElementById("imagelinks").style.transform ='translateX(0px)';
+    projects.dataset.carouselstate="centered"
+}
+
+else if (projects.dataset.carouselstate==="scroll2" && screen.width>=1350) {
+  
+    document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(calc(-700px - 16vw)' },
+    { transform: 'translateX(calc(-350px - 8vw))'  }
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+  document.getElementById("imagelinks").style.transform = 'translateX(calc(-350px - 8vw))';
+  projects.dataset.carouselstate="scroll1"
+}
+
+else if (projects.dataset.carouselstate==="scroll1" && screen.width>=450  && screen.width<1350) {
+
+  document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(calc(-350px - 8vw))' },
     { transform: 'translateX(0px)' }
   ],
   {
@@ -144,24 +252,132 @@ if (projects.dataset.carouselstate==="scroll1" && screen.width>1400) {
 
   document.getElementById("imagelinks").style.transform = 'translateX(0px)';
   projects.dataset.carouselstate="centered"
+  
 }
 
-else if (projects.dataset.carouselstate==="scroll2" && screen.width>1400) {
-  
-    document.getElementById("imagelinks").animate([
+else if (projects.dataset.carouselstate==="scroll2" && screen.width>=450  && screen.width<1350) {
+
+  document.getElementById("imagelinks").animate([
     // keyframes
-    { transform: 'translateX(-66vw)' },
-    { transform: 'translateX(-33vw)' }
+    { transform: 'translateX(calc(-700px - 16vw))'},
+    { transform: 'translateX(calc(-350px - 8vw))' }
   ],
   {
   
     duration: 200,
     
   });
-  document.getElementById("imagelinks").style.transform = 'translateX(-33vw)';
+
+  document.getElementById("imagelinks").style.transform = 'translateX(calc(-350px - 8vw))';
   projects.dataset.carouselstate="scroll1"
+  
 }
 
+else if (projects.dataset.carouselstate==="scroll3" && screen.width>=450  && screen.width<1350) {
+
+  document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(calc(-1050px - 24vw))' },
+    { transform: 'translateX(calc(-700px - 16vw))'}
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+
+  document.getElementById("imagelinks").style.transform = 'translateX(calc(-700px - 16vw))';
+  projects.dataset.carouselstate="scroll2"
+  
+}
+
+else if (projects.dataset.carouselstate==="scroll4" && screen.width>=450  && screen.width<1350) {
+
+  document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(calc(-1400px - 32vw))'},
+    { transform: 'translateX(calc(-1050px - 24vw))' }
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+
+  document.getElementById("imagelinks").style.transform = 'translateX(calc(-1050px - 24vw))';
+  projects.dataset.carouselstate="scroll3"
+  
+}
+
+else if (projects.dataset.carouselstate==="scroll1" && screen.width<450) {
+  
+  document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(calc(-350px - 8vw))' },
+    { transform: 'translateX(calc(0px))' }
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+
+  document.getElementById("imagelinks").style.transform = 'translateX(calc(0px))';
+  projects.dataset.carouselstate="centered"
+  
+}
+
+else if (projects.dataset.carouselstate==="scroll2" && screen.width<450) {
+  
+  document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(calc(-700px - 16wv))' },
+    { transform: 'translateX(calc(-350px - 8vw))' }
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+
+  document.getElementById("imagelinks").style.transform = 'translateX(calc(-350px - 8vw))';
+  projects.dataset.carouselstate="scroll1"
+  
+}
+
+else if (projects.dataset.carouselstate==="scroll3" && screen.width<450) {
+  
+  document.getElementById("imagelinks").animate([
+    // keyframes
+    { transform: 'translateX(calc(-1050px - 24vw))' },
+    { transform: 'translateX(calc(-700px - 16wv))' }
+  ],
+  {
+  
+    duration: 200,
+    
+  });
+
+  document.getElementById("imagelinks").style.transform = 'translateX(calc(-700px - 16wv))' ;
+  projects.dataset.carouselstate="scroll2"
+  
+}
+
+else if (projects.dataset.carouselstate==="scroll4" && screen.width<450) {
+  
+  document.getElementById("imagelinks").animate([
+   
+    { transform: 'translateX(calc(-1400px - 32wv))' },
+    { transform: 'translateX(calc(-1050px - 24vw))' }
+  ],
+  {
+    duration: 200, 
+  });
+
+  document.getElementById("imagelinks").style.transform = 'translateX(calc(-1050px - 24vw))'  ;
+  projects.dataset.carouselstate="scroll3"
+  
+}
 
 }
 

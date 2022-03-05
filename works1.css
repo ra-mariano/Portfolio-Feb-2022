@@ -11,7 +11,7 @@
 }
 
 #works1footer {
-  background-color: rgb(47, 47, 131, .8);
+  background-color: rgba(96, 96, 179, 0.8);
   display:flex;
   flex-direction: column;
   
@@ -31,7 +31,7 @@ h1 {
   width: 350px;
   height: 370px;
   filter: saturate(70%);
-  margin-left: 4vw;
+  
   margin-right: 4vw;
   border-radius: 7px;
   opacity: .9;
